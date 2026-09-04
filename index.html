@@ -311,6 +311,67 @@ section{position:relative}
 .op-ref-lives .op-ref-lbl{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .op-disc{margin-top:14px;font-size:.8rem;color:var(--muted);font-style:italic;line-height:1.5}
 
+/* ================= OFFER (R$ 348,23) ================= */
+.offer{background:var(--bg-soft)}
+.offer-card{
+  position:relative;overflow:hidden;border-radius:var(--radius-lg);
+  background:linear-gradient(160deg,#0B2149,#0E2A5C);color:#fff;
+  box-shadow:var(--shadow-lg);display:grid;grid-template-columns:1.05fr .95fr;
+  gap:0;align-items:stretch;
+}
+.offer-copy{padding:52px 50px}
+.offer-copy .eyebrow{color:#BFD3FF;background:rgba(255,255,255,.08)}
+.offer-copy h2{font-size:clamp(1.6rem,3vw,2.3rem);color:#fff;margin:16px 0 10px}
+.offer-copy .offer-op{display:inline-flex;align-items:center;gap:10px;background:#fff;border-radius:10px;padding:8px 14px;margin-bottom:20px}
+.offer-copy .offer-op img{height:26px;width:auto}
+.offer-list{list-style:none;margin:22px 0 4px}
+.offer-list li{display:flex;gap:13px;align-items:flex-start;padding:10px 0;color:#DCE6FA;font-size:1.02rem}
+.offer-list li .chk{width:28px;height:28px;border-radius:8px;background:rgba(37,211,102,.16);display:grid;place-items:center;flex:none;margin-top:1px}
+.offer-list li .chk svg{width:16px;height:16px;color:#43D67F}
+.offer-list li b{color:#fff;font-weight:700}
+.offer-price{
+  background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.04));
+  border-left:1px solid rgba(255,255,255,.14);padding:52px 46px;
+  display:flex;flex-direction:column;justify-content:center;text-align:center;
+}
+.offer-price .tag{display:inline-block;align-self:center;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem;color:var(--gold);background:rgba(231,178,75,.12);padding:8px 16px;border-radius:999px;margin-bottom:22px}
+.offer-price .from{font-size:.9rem;color:#BFD3FF;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.offer-price .val{font-family:'Plus Jakarta Sans';font-weight:800;line-height:1;margin:8px 0 6px}
+.offer-price .val .cur{font-size:1.5rem;vertical-align:top;color:#7FB0FF}
+.offer-price .val .num{font-size:clamp(3rem,7vw,4.4rem);color:#fff}
+.offer-price .per{font-size:1.02rem;color:#C6D4EE;font-weight:600}
+.offer-price .age{margin-top:6px;font-size:.92rem;color:#9FB4D8;font-weight:600}
+.offer-price .btn{margin-top:28px}
+.offer-price .disc{margin-top:18px;font-size:.78rem;color:#8FA6CE;font-style:italic;line-height:1.5}
+
+/* ================= OPERATORS BAND ================= */
+.ops{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ops .container{text-align:center}
+.ops h2{font-size:clamp(1.5rem,2.8vw,2.1rem);color:var(--navy)}
+.ops .lead{margin:14px auto 0}
+.ops-list{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:34px}
+.ops-list span{
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;
+  padding:12px 24px;font-weight:800;font-size:1rem;color:var(--navy);letter-spacing:.01em;
+}
+.ops-note{margin-top:26px;font-size:.82rem;color:var(--muted);font-style:italic}
+
+/* ================= ECONOMY (até 30%) ================= */
+.eco{background:linear-gradient(160deg,#0B2149,#0E2A5C);color:#fff}
+.eco-head{text-align:center;max-width:760px;margin:0 auto 46px}
+.eco-head .eyebrow{color:#BFD3FF;background:rgba(255,255,255,.08)}
+.eco-head h2{font-size:clamp(1.7rem,3.2vw,2.5rem);color:#fff;margin-top:16px}
+.eco-head h2 .hl{color:var(--gold)}
+.eco-head .lead{color:#C6D4EE;margin:16px auto 0}
+.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.eco-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius-lg);padding:34px 28px;text-align:center}
+.eco-card .ic{width:60px;height:60px;border-radius:16px;background:rgba(30,91,214,.24);display:grid;place-items:center;margin:0 auto 18px}
+.eco-card .ic svg{width:30px;height:30px;color:#7FB0FF}
+.eco-card h3{font-size:1.14rem;color:#fff;margin-bottom:8px}
+.eco-card p{color:#AFC2E4;font-size:.98rem}
+.eco-cta{margin-top:46px;text-align:center}
+.eco-disc{margin-top:22px;font-size:.82rem;color:#8FA6CE;font-style:italic;text-align:center;max-width:720px;margin-left:auto;margin-right:auto}
+
 /* ================= BENEFITS ================= */
 .benefits{background:var(--bg-soft)}
 .ben-head{text-align:center;max-width:680px;margin:0 auto 50px}
@@ -441,6 +502,9 @@ section{position:relative}
   .pain-grid,.steps{grid-template-columns:1fr}
   .ben-grid{grid-template-columns:1fr 1fr}
   .how-steps{grid-template-columns:1fr 1fr;gap:36px}
+  .offer-card{grid-template-columns:1fr}
+  .offer-price{border-left:none;border-top:1px solid rgba(255,255,255,.14)}
+  .eco-grid{grid-template-columns:1fr}
   .nav-links{display:none}
   .header-phone{display:none}
   .menu-toggle{display:block}
@@ -488,6 +552,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#diferencial">Como fazemos</a>
       <a href="#beneficios">Benefícios</a>
       <a href="#planos">Planos</a>
+      <a href="#economia">Economia</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#faq">Dúvidas</a>
     </nav>
@@ -511,6 +576,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="#diferencial">Como fazemos</a>
     <a href="#beneficios">Benefícios</a>
     <a href="#planos">Planos</a>
+    <a href="#economia">Economia</a>
     <a href="#como-funciona">Como funciona</a>
     <a href="#faq">Dúvidas</a>
     <a class="btn btn-primary btn-block" href="#cotacao" data-cta="drawer-form">Quero analisar meu plano</a>
@@ -749,6 +815,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- ============ OFFER (R$ 348,23) ============ -->
+<section class="offer section-pad" id="oferta">
+  <div class="container">
+    <div class="offer-card">
+      <div class="offer-copy">
+        <span class="eyebrow">Plano de saúde empresarial • CNPJ ou MEI</span>
+        <h2>Cobertura de referência a partir de 3 vidas</h2>
+        <div class="offer-op"><img src="assets/bradesco.png" alt="Bradesco Saúde"></div>
+        <ul class="offer-list">
+          <li><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></div><span><b>A partir de 3 vidas</b> — ideal para empresas de todos os portes.</span></li>
+          <li><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></div><span><b>Quarto privativo</b> conforme o plano escolhido.</span></li>
+          <li><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></div><span><b>Os melhores hospitais da rede</b>, incluindo a Rede D'Or São Luiz.</span></li>
+          <li><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></div><span><b>Cobertura nacional</b> com condições para empresas.</span></li>
+        </ul>
+      </div>
+      <div class="offer-price">
+        <span class="tag">Faça a sua cotação</span>
+        <div class="from">A partir de</div>
+        <div class="val"><span class="cur">R$</span><span class="num">348,23</span></div>
+        <div class="per">por vida</div>
+        <div class="age">para vidas de 0 a 18 anos</div>
+        <a class="btn btn-primary btn-lg" href="https://wa.me/5571982255151?text=Ol%C3%A1!%20Quero%20a%20cota%C3%A7%C3%A3o%20do%20plano%20empresarial%20*Bradesco%20Sa%C3%BAde*%20a%20partir%20de%20R%24%20348%2C23%20por%20vida." data-cta="oferta-348" target="_blank" rel="noopener">Fazer minha cotação</a>
+        <p class="disc">*Valor apresentado como referência para o cenário informado. Condições sujeitas à análise, perfil e elegibilidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPERATORS BAND ============ -->
+<section class="ops section-pad" id="operadoras">
+  <div class="container">
+    <span class="eyebrow">Para a sua empresa</span>
+    <h2>As melhores operadoras, mais saúde para a sua equipe</h2>
+    <p class="lead">Trabalhamos com operadoras de referência para encontrar o plano CNPJ ou MEI que melhor equilibra rede, cobertura e custo.</p>
+    <div class="ops-list">
+      <span>SulAmérica</span>
+      <span>Ampla Saúde</span>
+      <span>Porto</span>
+      <span>Amil</span>
+      <span>Bradesco Saúde</span>
+      <span>Amil One</span>
+      <span>Hapvida</span>
+      <span>Unimed</span>
+    </div>
+    <p class="ops-note">A disponibilidade de cada operadora depende da região e do perfil da empresa. Condições sujeitas à análise e elegibilidade.</p>
+  </div>
+</section>
+
 <!-- ============ BENEFITS ============ -->
 <section class="benefits section-pad" id="beneficios">
   <div class="container">
@@ -780,6 +894,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Previsibilidade de custos e um benefício que cabe no orçamento da empresa.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ ECONOMY (até 30%) ============ -->
+<section class="eco section-pad" id="economia">
+  <div class="container">
+    <div class="eco-head">
+      <span class="eyebrow on-dark">Já tem plano na empresa?</span>
+      <h2>Reduza <span class="hl">até 30%</span> dos seus custos com plano de saúde</h2>
+      <p class="lead">Se a sua empresa já tem plano, revisamos o contrato atual e buscamos uma estrutura que proteja a equipe pagando menos. CNPJ ou MEI.</p>
+    </div>
+
+    <div class="eco-grid">
+      <div class="eco-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Mais economia</h3>
+        <p>Comparamos o seu contrato com outras opções de mercado para reduzir o custo por vida.</p>
+      </div>
+      <div class="eco-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></div>
+        <h3>Sua equipe mais protegida</h3>
+        <p>Mantemos ou ampliamos a cobertura para que ninguém do time fique desassistido.</p>
+      </div>
+      <div class="eco-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
+        <h3>Mais saúde para o seu negócio</h3>
+        <p>Previsibilidade de custo e um benefício que sustenta os resultados da empresa.</p>
+      </div>
+    </div>
+
+    <div class="eco-cta">
+      <a class="btn btn-primary btn-lg" href="https://wa.me/5571982255151?text=Ol%C3%A1!%20J%C3%A1%20tenho%20plano%20na%20empresa%20e%20quero%20reduzir%20os%20custos.%20Pode%20revisar%20o%20meu%20contrato%3F" data-cta="economia-wa" target="_blank" rel="noopener">Quero reduzir meus custos</a>
+    </div>
+    <p class="eco-disc">Percentual de economia apresentado como referência. O resultado depende do perfil, do contrato atual e da análise de elegibilidade.</p>
   </div>
 </section>
 
@@ -1005,6 +1153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#diferencial">Como fazemos</a>
         <a href="#beneficios">Benefícios</a>
         <a href="#planos">Planos</a>
+        <a href="#economia">Economia</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#faq">Dúvidas</a>
       </div>
